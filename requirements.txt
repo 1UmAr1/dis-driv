@@ -1,0 +1,16 @@
+boto3==1.17.93
+click==7.1.2
+Flask==2.0.1
+gevent==21.1.2
+gunicorn==19.0.0
+itsdangerous==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+numpy==1.19.5
+opencv-contrib-python==4.5.2.52
+opencv-python==4.5.2.54
+pandas==1.1.2
+pickleshare==0.7.5
+python-dotenv==0.13.0
+scikit-image==0.18.1
+Werkzeug==2.0.1

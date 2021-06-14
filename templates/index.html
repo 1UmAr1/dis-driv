@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head> 
+    <title>Model Deployement</title>
+
+</head>
+    <body>
+        <h1> Model </h1>
+        <h2>Select a file to upload</h2>
+        <p>
+            {% with messages = get_flashed_messages() %}
+               {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <li>
+                                {{message}}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+        </p>
+        <!-- {% if filename %}
+        <div style="padding: 20px;">
+            <img src= {{ filename }} width="20%" height="20%">
+        </div>
+        {% endif %} -->
+        <form method="post" action="/" enctype="multipart/form-data">
+            <dl>
+                <p>
+                    <input type="file" name="file" class="form-control" autocomplete="off" required>
+                    <input type="submit" value="Submit" class="btn btn-info">
+                </p>
+            </dl>
+        </form>
+        <h1>Result : {{prediction}}</h1>
+        
+    </body> 
+</html>
+</html>
